@@ -1,0 +1,37 @@
+baseURL = ""
+languageCode = "en-us"
+title = "JavaScripter"
+theme = "kube"
+description = "A compilation of notes during my journey from novice to full stack JavaScript developer by Russell Rosario."
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "Russell Rosario" # add your company name
+  github = "rosariorussell" # add your github profile name
+  twitter = "russellrosario" # add your twitter profile
+  email = "rosariorussell@gmail.com"
+
+[[menu.main]]
+    name = "Basics"
+    weight = 100
+    url = "/basics/"
+[[menu.main]]
+    name = "Languages"
+    weight = 200
+    url = "/Languages/"
+[[menu.main]]
+    name = "Frontend"
+    weight = 300
+    url = "/Frontend/"
+[[menu.main]]
+    name = "Backend"
+    weight = 400
+    url = "/Backend/"
+[[menu.main]]
+    name = "DevOps"
+    weight = 500
+    url = "/DevOps/"
+[[menu.main]]
+    name = "Latest"
+    weight = 600
+    url = "/Latest/"

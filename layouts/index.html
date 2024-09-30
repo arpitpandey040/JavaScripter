@@ -1,0 +1,72 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="https://github.com/rosariorussell/JavaScripter/archive/master.zip" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Download</a>
+    <a class="button outline big" href="https://github.com/rosariorussell/JavaScripter" id="testerButton" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">Over
+      150&#9733;
+      on Github</a>
+    <p>Zip-archive of all notes indexed in README.md</p>
+  </div>
+  <div class="message focus" style="text-align:center" data-component="message"> <span class="close small"></span>
+    A collection of software engineering notes published for the benefit of my students at University of Miami's coding bootcamp <a class="button inverted small "
+      href="https://www.russellrosario.com">by Russell Rosario</a>
+  </div>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Basics" height="48" src="{{ "/img/icons/basics.svg" | relURL }}" width="48">
+        </figure>
+        <h3>Basics</h3>
+        <p>Computer Science 101, Internet protocols</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Languages" height="48" src="{{ "/img/icons/languages.svg" | relURL }}" width="48">
+        </figure>
+        <h3>Languages</h3>
+        <p>HTML/CSS, JavaScript, Python</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Frontend" height="48" src="{{ "/img/icons/frontend.svg" | relURL }}" width="48">
+        </figure>
+        <h3>Frontend</h3>
+        <p>React, Bootstrap, jQuery, UI/UX</p>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Backend" height="48" src="{{ "/img/icons/backend.svg" | relURL }}" width="48">
+        </figure>
+        <h3>Backend</h3>
+        <p>Node, Databases, APIs</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="DevOps" height="48" src="{{ "/img/icons/devops.svg" | relURL }}" width="48">
+        </figure>
+        <h3>DevOps</h3>
+        <p>Security, Testing, Scalability</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Latest" height="48" src="{{ "/img/icons/applications.svg" | relURL }}" width="48">
+        </figure>
+        <h3>Latest</h3>
+        <p>Big Data, AI, Blockchain</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
